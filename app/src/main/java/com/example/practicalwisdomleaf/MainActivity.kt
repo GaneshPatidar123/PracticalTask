@@ -147,7 +147,11 @@ class MainActivity : AppCompatActivity(), ScrollEndListener {
 
     private fun mSaveMediaToStorage(mImage: Bitmap) {
         val filename = "${newid}.jpg"
-
+        val file = File(
+            this.getExternalFilesDir(Environment.DIRECTORY_PICTURES)
+                .toString()  + filename
+        )
+        if (!file.exists()) {
             var fos: OutputStream? = null
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
@@ -168,9 +172,10 @@ class MainActivity : AppCompatActivity(), ScrollEndListener {
                 fos = FileOutputStream(image)
             }
             fos?.use {
-                mImage?.compress(Bitmap.CompressFormat.JPEG, 80, it)
-                Toast.makeText(this, "Saved to Gallery", Toast.LENGTH_SHORT).show()
+                mImage.compress(Bitmap.CompressFormat.JPEG, 80, it)
+                Toast.makeText(this, filename+" Downloaded", Toast.LENGTH_SHORT).show()
             }
+        }
     }
 
     private fun mLoad(string: String): Bitmap? {
@@ -207,14 +212,18 @@ class MainActivity : AppCompatActivity(), ScrollEndListener {
         permissions: Array<out String>,
         grantResults: IntArray
     ) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
-        if (requestCode == REQUEST_CODE_ASK_PERMISSIONS) {
-            if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                downloadUrl(downloadUrls)
-            } else {
-                Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_LONG)
-                    .show()
+        try{
+            super.onRequestPermissionsResult(requestCode, permissions, grantResults)
+            if (requestCode == REQUEST_CODE_ASK_PERMISSIONS) {
+                if (grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    downloadUrl(downloadUrls)
+                } else {
+                    Toast.makeText(this, getString(R.string.permission_denied), Toast.LENGTH_LONG)
+                        .show()
+                }
             }
+        }catch (error: Throwable) {
+            error.printStackTrace()
         }
     }
 }
