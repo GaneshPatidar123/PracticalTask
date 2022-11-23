@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PracticalWisdomleaf</string>
+    <string name="permission_denied">Permission Denied</string>
+</resources>
