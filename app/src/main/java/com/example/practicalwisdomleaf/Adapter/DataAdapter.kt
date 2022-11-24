@@ -14,10 +14,10 @@ import com.bumptech.glide.Glide
 import com.example.practicalwisdomleaf.MainActivity
 import com.example.practicalwisdomleaf.R
 import com.example.practicalwisdomleaf.databinding.DialogdetailsBinding
-import com.example.practicalwisdomleaf.model.PiscumData
+import com.example.practicalwisdomleaf.model.ResponseData
 
 
-class DataAdapter(private val mList: List<PiscumData>,private val contact:Context) : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
+class DataAdapter(private val mList: List<ResponseData>,private val contact:Context) : RecyclerView.Adapter<DataAdapter.ViewHolder>() {
 
     // create new views
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {

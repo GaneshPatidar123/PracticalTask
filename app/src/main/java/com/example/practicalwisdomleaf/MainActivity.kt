@@ -14,16 +14,13 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.lifecycle.ViewModelProvider
 import com.example.practicalwisdomleaf.Adapter.DataAdapter
+import com.example.practicalwisdomleaf.Repository.MainRepository
+import com.example.practicalwisdomleaf.Repository.MyViewModelFactory
 import com.example.practicalwisdomleaf.databinding.ActivityMainBinding
-import com.example.practicalwisdomleaf.model.PiscumData
-import com.example.practicalwisdomleaf.services.PiscumAPI
-import com.example.practicalwisdomleaf.services.ScrollEndListener
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
-import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
+import com.example.practicalwisdomleaf.services.RetrofitService
+import com.example.practicalwisdomleaf.viewModel.MainViewModel
 import java.io.*
 import java.net.HttpURLConnection
 import java.net.MalformedURLException
@@ -31,46 +28,38 @@ import java.net.URL
 import java.util.concurrent.Executors
 
 
-class MainActivity : AppCompatActivity(), ScrollEndListener {
+class MainActivity : AppCompatActivity() {
     private  var mBinding: ActivityMainBinding? = null
     private lateinit var adapter: DataAdapter
     var downloadUrls:String=""
     var newid:Int=0
+    lateinit var viewModel: MainViewModel
     private val REQUEST_CODE_ASK_PERMISSIONS = 1010
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         mBinding = ActivityMainBinding.inflate(getLayoutInflater())
         setContentView(mBinding!!.root);
+        val retrofitService = RetrofitService.getInstance()
+        val mainRepository = MainRepository(retrofitService)
+        // viewModel initialization
+        viewModel = ViewModelProvider(
+            this,
+            MyViewModelFactory(mainRepository)
+        ).get(MainViewModel::class.java)
         // API call for get Data
-        getData()
-         mBinding!!.swipe.setOnRefreshListener {
-             getData()
-             mBinding!!.swipe.isRefreshing=false
-         }
+        viewModel.getAllData()
+        // get MutableLiveData for API response and set to Adapter
+        viewModel.data.observe(this, {
+            adapter = DataAdapter(it!!, this@MainActivity)
+            mBinding!!.rcList.adapter = adapter
+        })
+        // Swipe refresh data
+        mBinding!!.swipe.setOnRefreshListener {
+            viewModel.getAllData()
+            mBinding!!.swipe.isRefreshing = false
+        }
         }
 
-    private fun getData() {
-        val retrofit = Retrofit.Builder()
-            .baseUrl("https://picsum.photos/")
-            .addConverterFactory(GsonConverterFactory.create())
-            .build()
-        val apiInterfaces = retrofit.create(PiscumAPI::class.java).getListData(2,20)
-        apiInterfaces.enqueue( object : Callback<List<PiscumData>>{
-            override fun onResponse(call: Call<List<PiscumData>>?, response: Response<List<PiscumData>>?) {
-                if (response?.body() != null) {
-                    adapter = DataAdapter(response.body()!!,this@MainActivity)
-                    mBinding!!.rcList.adapter = adapter
-                }
-            }
-            override fun onFailure(call: Call<List<PiscumData>>?, t: Throwable?) {
-                Toast.makeText(this@MainActivity, t!!.message, Toast.LENGTH_SHORT).show()
-            }
-        })
-    }
-
-    override fun onScrollEnd() {
-
-    }
 
     fun checkPermissions(downloadUrl: String, id: Int) {
         downloadUrls=downloadUrl
