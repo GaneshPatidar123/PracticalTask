@@ -1,0 +1,96 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.practicalwisdomleaf"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:4:5-66
+11-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:5:5-81
+12-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:5:22-78
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:6:5-80
+13-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:6:22-77
+14
+15    <application
+15-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:7:5-32:19
+16        android:allowBackup="true"
+16-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:8:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.8.0] C:\Users\MOHIT\.gradle\caches\transforms-3\6a19de105318aab1da00cfa3c60fb56e\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+18        android:dataExtractionRules="@xml/data_extraction_rules"
+18-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:9:9-65
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:fullBackupContent="@xml/backup_rules"
+21-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:10:9-54
+22        android:icon="@mipmap/ic_launcher"
+22-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:11:9-43
+23        android:label="@string/app_name"
+23-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:12:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:13:9-54
+25        android:supportsRtl="true"
+25-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:14:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.PracticalWisdomleaf"
+27-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:16:9-57
+28        android:usesCleartextTraffic="true" >
+28-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:15:9-44
+29        <activity
+29-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:18:9-26:20
+30            android:name="com.example.practicalwisdomleaf.Activity.SplashActivity"
+30-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:19:13-52
+31            android:exported="true" >
+31-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:20:13-36
+32            <intent-filter>
+32-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:21:13-25:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:22:17-69
+33-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:22:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:24:17-77
+35-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:24:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity
+38-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:27:9-31:20
+39            android:name="com.example.practicalwisdomleaf.MainActivity"
+39-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:28:13-41
+40            android:exported="false" >
+40-->D:\GaneshPratical\PracticalWisdomleaf\app\src\main\AndroidManifest.xml:29:13-37
+41        </activity>
+42
+43        <provider
+43-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MOHIT\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+44            android:name="androidx.startup.InitializationProvider"
+44-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MOHIT\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+45            android:authorities="com.example.practicalwisdomleaf.androidx-startup"
+45-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MOHIT\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+46            android:exported="false" >
+46-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MOHIT\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+47            <meta-data
+47-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MOHIT\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+48                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+48-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MOHIT\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+49                android:value="androidx.startup" />
+49-->[androidx.emoji2:emoji2:1.2.0] C:\Users\MOHIT\.gradle\caches\transforms-3\848773e611bbde5d3ec0ec3e63d01c98\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+50            <meta-data
+50-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MOHIT\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+51                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+51-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MOHIT\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+52                android:value="androidx.startup" />
+52-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\MOHIT\.gradle\caches\transforms-3\a4f0fb44e9b56370f8c2ed23c9d5d030\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+53        </provider>
+54    </application>
+55
+56</manifest>

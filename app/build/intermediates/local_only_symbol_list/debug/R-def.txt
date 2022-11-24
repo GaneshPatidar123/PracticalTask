@@ -1,0 +1,34 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color purple_200
+color purple_500
+color purple_700
+color teal_200
+color teal_700
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable rounded_corner_dialog
+drawable softball
+id btnok
+id cardImageview
+id ivImage
+id layoutMain
+id rcList
+id swipe
+id tvDescrption
+id tvTitle
+id tvTitleMsg
+layout activity_main
+layout activity_splash
+layout dialogdetails
+layout item_list
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string permission_denied
+style MyDialogTheme
+style Theme.PracticalWisdomleaf
+xml backup_rules
+xml data_extraction_rules

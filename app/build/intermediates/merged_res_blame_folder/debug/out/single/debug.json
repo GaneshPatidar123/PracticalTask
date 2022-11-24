@@ -1,0 +1,114 @@
+[
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/layout_activity_main.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-anydpi-v24_softball.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-pngs-31:/drawable-anydpi-v24/softball.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-pngs-31:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-ldpi_softball.png.flat",
+        "source": "com.example.practicalwisdomleaf.app-pngs-31:/drawable-ldpi/softball.png"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/layout_item_list.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/layout/item_list.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-xhdpi_softball.png.flat",
+        "source": "com.example.practicalwisdomleaf.app-pngs-31:/drawable-xhdpi/softball.png"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/layout_activity_splash.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/layout/activity_splash.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-hdpi_softball.png.flat",
+        "source": "com.example.practicalwisdomleaf.app-pngs-31:/drawable-hdpi/softball.png"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/xml_backup_rules.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-mdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-xhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-mdpi_softball.png.flat",
+        "source": "com.example.practicalwisdomleaf.app-pngs-31:/drawable-mdpi/softball.png"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-v24_rounded_corner_dialog.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/drawable-v24/rounded_corner_dialog.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-xxxhdpi_softball.png.flat",
+        "source": "com.example.practicalwisdomleaf.app-pngs-31:/drawable-xxxhdpi/softball.png"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/layout_dialogdetails.xml.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/layout/dialogdetails.xml"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/drawable-xxhdpi_softball.png.flat",
+        "source": "com.example.practicalwisdomleaf.app-pngs-31:/drawable-xxhdpi/softball.png"
+    },
+    {
+        "merged": "com.example.practicalwisdomleaf.app-merged_res-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.practicalwisdomleaf.app-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+    }
+]
